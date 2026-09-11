@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GKL — Grappa Krush League</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="wrap">
+        <a href="index.html" class="logo">G<span>K</span>L</a>
+        <div class="nav-links">
+          <a href="index.html" class="current" data-i18n="nav.home">Home</a>
+          <a href="fightcard.html" data-i18n="nav.fightcard">Fight Card</a>
+          <a href="roster.html" data-i18n="nav.roster">Roster</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+        </div>
+        <div class="nav-actions">
+          <div class="lang-toggle">
+            <button data-lang="en">EN</button>
+            <button data-lang="ka">ქართ</button>
+          </div>
+          <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="wrap hero-content">
+        <div class="hero-eventline">
+          <span class="dot"></span>
+          <span data-i18n="home.hero.eventline"
+            >GKL 1 · Sun NOV 27 · TBILISI ARENA</span
+          >
+        </div>
+        <h1>
+          Sarga Vann<span class="vs" data-i18n="home.hero.vs">vs</span>Dato
+          Beridze
+        </h1>
+        <div class="hero-sub">
+          <div class="hero-fact">
+            <strong data-i18n="home.hero.fact1.strong"
+              >Light Heavyweight Title</strong
+            ><span data-i18n="home.hero.fact1.text">Main event, 5 rounds</span>
+          </div>
+          <div class="hero-fact">
+            <strong>19–0</strong
+            ><span data-i18n="home.hero.fact2.text"
+              >Vann enters undefeated</span
+            >
+          </div>
+          <div class="hero-fact">
+            <strong>22–3</strong
+            ><span data-i18n="home.hero.fact3.text"
+              >Beridze, two-time challenger</span
+            >
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="fightcard.html"
+            ><button class="btn-primary" data-i18n="home.btn.fullcard">
+              See Full Fight Card
+            </button></a
+          >
+          <a href="roster.html"
+            ><button class="btn-ghost" data-i18n="home.btn.roster">
+              View Roster
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-band">
+      <div class="stat">
+        <strong>41</strong
+        ><span data-i18n="home.stat1">Events held since founding</span>
+      </div>
+      <div class="stat">
+        <strong>184</strong
+        ><span data-i18n="home.stat2">Fighters under contract</span>
+      </div>
+      <div class="stat">
+        <strong>9</strong><span data-i18n="home.stat3">Weight divisions</span>
+      </div>
+      <div class="stat">
+        <strong>5</strong
+        ><span data-i18n="home.stat4">Countries represented</span>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="kicker" data-i18n="home.section.kicker">Next Up</span>
+            <h2 data-i18n="home.section.heading">GKL 41: Vann vs. Beridze</h2>
+          </div>
+          <p data-i18n="home.section.text">
+            Tbilisi Arena, Georgia — Saturday, November 14. Main card at 9:00 PM
+            local.
+          </p>
+        </div>
+        <div class="card-strip">
+          <div class="fight-row">
+            <div class="fight-tag" data-i18n="tag.main">MAIN</div>
+            <div class="fighter-mini">
+              <div class="fmini-photo">SV</div>
+              <div>
+                <div class="fmini-name">Sarga Vann</div>
+                <div class="fmini-record">19–0–0</div>
+              </div>
+            </div>
+            <div class="fight-vs">VS</div>
+            <div class="fighter-mini right">
+              <div>
+                <div class="fmini-name">Dato Beridze</div>
+                <div class="fmini-record">22–3–0</div>
+              </div>
+              <div class="fmini-photo">DB</div>
+            </div>
+            <div class="fight-weight" data-i18n="weight.lhw_title">
+              Light Heavyweight · Title
+            </div>
+          </div>
+          <div class="fight-row">
+            <div class="fight-tag" data-i18n="tag.comain">CO-MAIN</div>
+            <div class="fighter-mini">
+              <div class="fmini-photo">LK</div>
+              <div>
+                <div class="fmini-name">Levan Kipiani</div>
+                <div class="fmini-record">15–2–0</div>
+              </div>
+            </div>
+            <div class="fight-vs">VS</div>
+            <div class="fighter-mini right">
+              <div>
+                <div class="fmini-name">Marco Ferrante</div>
+                <div class="fmini-record">17–4–0</div>
+              </div>
+              <div class="fmini-photo">MF</div>
+            </div>
+            <div class="fight-weight" data-i18n="weight.ww">Welterweight</div>
+          </div>
+        </div>
+        <div style="margin-top: 28px">
+          <a href="fightcard.html"
+            ><button class="btn-ghost" data-i18n="home.btn.seefull">
+              See Full Card
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="foot-top">
+          <div class="logo">G<span>K</span>L</div>
+          <div class="foot-cols">
+            <div class="foot-col">
+              <h4 data-i18n="footer.league">League</h4>
+              <a href="roster.html" data-i18n="nav.roster">Roster</a>
+              <a href="events.html" data-i18n="nav.events">Events</a>
+              <a href="fightcard.html" data-i18n="nav.fightcard">Fight Card</a>
+            </div>
+            <div class="foot-col">
+              <h4 data-i18n="footer.info">Info</h4>
+              <a href="#" data-i18n="footer.rankings">Rankings</a>
+              <a href="#" data-i18n="footer.rules"
+                >Rules &amp; Weight Classes</a
+              >
+              <a href="#" data-i18n="footer.broadcast">Broadcast Partners</a>
+            </div>
+            <div class="foot-col">
+              <h4 data-i18n="footer.follow">Follow</h4>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <span data-i18n="footer.copyright"
+            >© 2026 Grappa Krush League (GKL). All rights reserved.</span
+          >
+          <span data-i18n="footer.disclaimer"
+            >Fictional league for demonstration purposes.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

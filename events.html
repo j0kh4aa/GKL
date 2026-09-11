@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | GKL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="wrap">
+        <a href="index.html" class="logo">G<span>K</span>L</a>
+        <div class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="fightcard.html" data-i18n="nav.fightcard">Fight Card</a>
+          <a href="roster.html" data-i18n="nav.roster">Roster</a>
+          <a href="events.html" class="current" data-i18n="nav.events"
+            >Events</a
+          >
+        </div>
+        <div class="nav-actions">
+          <div class="lang-toggle">
+            <button data-lang="en">EN</button>
+            <button data-lang="ka">ქართ</button>
+          </div>
+          <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="wrap">
+        <span class="kicker" data-i18n="events.kicker">Full Schedule</span>
+        <h1 data-i18n="events.h1">Events</h1>
+        <p data-i18n="events.text">
+          Upcoming cards and recent results across the league calendar.
+        </p>
+      </div>
+    </header>
+
+    <section>
+      <div class="wrap">
+        <a href="fightcard.html" class="event-item event-item-link">
+          <div class="event-date">
+            <span data-i18n="events.e1.month">NOV</span><strong>14</strong>
+          </div>
+          <div class="event-info">
+            <h3 data-i18n="events.e1.title">GKL 41: Vann vs. Beridze</h3>
+            <p data-i18n="events.e1.desc">
+              Tbilisi Arena, Georgia — Light Heavyweight title bout
+            </p>
+          </div>
+          <div class="event-status upcoming" data-i18n="events.status.upcoming">
+            Upcoming
+          </div>
+        </a>
+        <a href="fightcard.html" class="event-item event-item-link">
+          <div class="event-date">
+            <span data-i18n="events.e2.month">DEC</span><strong>12</strong>
+          </div>
+          <div class="event-info">
+            <h3 data-i18n="events.e2.title">GKL 42: Kipiani vs. Ferrante</h3>
+            <p data-i18n="events.e2.desc">
+              Sky Dome, Batumi — Welterweight title bout
+            </p>
+          </div>
+          <div class="event-status upcoming" data-i18n="events.status.upcoming">
+            Upcoming
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="foot-top">
+          <div class="logo">G<span>K</span>L</div>
+          <div class="foot-cols">
+            <div class="foot-col">
+              <h4 data-i18n="footer.league">League</h4>
+              <a href="roster.html" data-i18n="nav.roster">Roster</a>
+              <a href="events.html" data-i18n="nav.events">Events</a>
+              <a href="fightcard.html" data-i18n="nav.fightcard">Fight Card</a>
+            </div>
+            <div class="foot-col">
+              <h4 data-i18n="footer.info">Info</h4>
+              <a href="#" data-i18n="footer.rankings">Rankings</a>
+              <a href="#" data-i18n="footer.rules"
+                >Rules &amp; Weight Classes</a
+              >
+              <a href="#" data-i18n="footer.broadcast">Broadcast Partners</a>
+            </div>
+            <div class="foot-col">
+              <h4 data-i18n="footer.follow">Follow</h4>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <span data-i18n="footer.copyright"
+            >© 2026 Grappa Krush League (GKL). All rights reserved.</span
+          >
+          <span data-i18n="footer.disclaimer"
+            >Fictional league for demonstration purposes.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

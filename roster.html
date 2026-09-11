@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fighter Roster | GKL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="wrap">
+        <a href="index.html" class="logo">G<span>K</span>L</a>
+        <div class="nav-links">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="fightcard.html" data-i18n="nav.fightcard">Fight Card</a>
+          <a href="roster.html" class="current" data-i18n="nav.roster"
+            >Roster</a
+          >
+          <a href="events.html" data-i18n="nav.events">Events</a>
+        </div>
+        <div class="nav-actions">
+          <div class="lang-toggle">
+            <button data-lang="en">EN</button>
+            <button data-lang="ka">ქართ</button>
+          </div>
+          <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="wrap">
+        <span class="kicker" data-i18n="roster.kicker">184 Athletes</span>
+        <h1 data-i18n="roster.h1">Fighter Roster</h1>
+        <p data-i18n="roster.text">
+          Ranked by division. Champions carry the belt into every title defense.
+        </p>
+      </div>
+    </header>
+
+    <section>
+      <div class="wrap">
+        <div class="division-bar" id="divisionBar">
+          <button
+            class="division-chip active"
+            data-div="all"
+            data-i18n="div.all"
+          >
+            All
+          </button>
+          <button class="division-chip" data-div="lhw" data-i18n="weight.lhw">
+            Light Heavyweight
+          </button>
+          <button class="division-chip" data-div="ww" data-i18n="weight.ww">
+            Welterweight
+          </button>
+          <button class="division-chip" data-div="lw" data-i18n="weight.lw">
+            Lightweight
+          </button>
+          <button class="division-chip" data-div="fw" data-i18n="weight.fw">
+            Featherweight
+          </button>
+          <button class="division-chip" data-div="wbw" data-i18n="weight.wbw">
+            Women's Bantamweight
+          </button>
+        </div>
+
+        <div class="roster-grid" id="rosterGrid">
+          <div class="fighter-card" data-div="lhw">
+            <span class="fc-division" data-i18n="weight.lhw"
+              >Light Heavyweight</span
+            >
+            <span class="fc-rank champ">C</span>
+            <div class="fc-photo">SV</div>
+            <div class="fc-name">Sarga Vann</div>
+            <div class="fc-nick">"The Northern Line"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>19–0–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Tbilisi</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>29</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+          <div class="fighter-card" data-div="lhw">
+            <span class="fc-division" data-i18n="weight.lhw"
+              >Light Heavyweight</span
+            >
+            <span class="fc-rank">1</span>
+            <div class="fc-photo">DB</div>
+            <div class="fc-name">Dato Beridze</div>
+            <div class="fc-nick">"Iron Gate"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>22–3–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Kutaisi</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>32</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+          <div class="fighter-card" data-div="lhw">
+            <span class="fc-division" data-i18n="weight.lhw"
+              >Light Heavyweight</span
+            >
+            <span class="fc-rank">2</span>
+            <div class="fc-photo">VS</div>
+            <div class="fc-name">Viktor Sabo</div>
+            <div class="fc-nick">"Concrete"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>16–2–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Batumi</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>27</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter-card" data-div="ww">
+            <span class="fc-division" data-i18n="weight.ww">Welterweight</span>
+            <span class="fc-rank champ">C</span>
+            <div class="fc-photo">LK</div>
+            <div class="fc-name">Levan Kipiani</div>
+            <div class="fc-nick">"The Architect"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>15–2–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Rustavi</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>26</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+          <div class="fighter-card" data-div="ww">
+            <span class="fc-division" data-i18n="weight.ww">Welterweight</span>
+            <span class="fc-rank">1</span>
+            <div class="fc-photo">MF</div>
+            <div class="fc-name">Marco Ferrante</div>
+            <div class="fc-nick">"Vento"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>17–4–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Bari</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>30</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+          <div class="fighter-card" data-div="ww">
+            <span class="fc-division" data-i18n="weight.ww">Welterweight</span>
+            <span class="fc-rank">2</span>
+            <div class="fc-photo">JB</div>
+            <div class="fc-name">Jamal Brooks</div>
+            <div class="fc-nick">"Slick"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>13–1–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Detroit</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>25</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter-card" data-div="lw">
+            <span class="fc-division" data-i18n="weight.lw">Lightweight</span>
+            <span class="fc-rank champ">C</span>
+            <div class="fc-photo">TM</div>
+            <div class="fc-name">Toma Mchedlishvili</div>
+            <div class="fc-nick">"Young Storm"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>8–0–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Gori</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>22</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+          <div class="fighter-card" data-div="lw">
+            <span class="fc-division" data-i18n="weight.lw">Lightweight</span>
+            <span class="fc-rank">1</span>
+            <div class="fc-photo">KA</div>
+            <div class="fc-name">Kwame Asante</div>
+            <div class="fc-nick">"Thunder"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>10–3–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Accra</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>28</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+          <div class="fighter-card" data-div="lw">
+            <span class="fc-division" data-i18n="weight.lw">Lightweight</span>
+            <span class="fc-rank">2</span>
+            <div class="fc-photo">PN</div>
+            <div class="fc-name">Pavel Nowak</div>
+            <div class="fc-nick">"The Ledger"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>14–4–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Krakow</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>31</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter-card" data-div="fw">
+            <span class="fc-division" data-i18n="weight.fw">Featherweight</span>
+            <span class="fc-rank champ">C</span>
+            <div class="fc-photo">GJ</div>
+            <div class="fc-name">Giorgi Japaridze</div>
+            <div class="fc-nick">"Needle"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>9–1–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Zugdidi</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>24</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+          <div class="fighter-card" data-div="fw">
+            <span class="fc-division" data-i18n="weight.fw">Featherweight</span>
+            <span class="fc-rank">1</span>
+            <div class="fc-photo">RO</div>
+            <div class="fc-name">Ruslan Okoye</div>
+            <div class="fc-nick">"Bishop"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>14–5–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Lagos</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>29</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter-card" data-div="wbw">
+            <span class="fc-division" data-i18n="weight.wbw"
+              >Women's Bantamweight</span
+            >
+            <span class="fc-rank champ">C</span>
+            <div class="fc-photo">NT</div>
+            <div class="fc-name">Nino Tabatadze</div>
+            <div class="fc-nick">"Vine"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>11–1–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Telavi</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>27</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+          <div class="fighter-card" data-div="wbw">
+            <span class="fc-division" data-i18n="weight.wbw"
+              >Women's Bantamweight</span
+            >
+            <span class="fc-rank">1</span>
+            <div class="fc-photo">AD</div>
+            <div class="fc-name">Ayla Demir</div>
+            <div class="fc-nick">"Fjord"</div>
+            <div class="fc-meta">
+              <div>
+                <strong>13–3–0</strong
+                ><span data-i18n="meta.record">Record</span>
+              </div>
+              <div>
+                <strong>Izmir</strong><span data-i18n="meta.from">From</span>
+              </div>
+              <div>
+                <strong>26</strong><span data-i18n="meta.age">Age</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="foot-top">
+          <div class="logo">G<span>K</span>L</div>
+          <div class="foot-cols">
+            <div class="foot-col">
+              <h4 data-i18n="footer.league">League</h4>
+              <a href="roster.html" data-i18n="nav.roster">Roster</a>
+              <a href="events.html" data-i18n="nav.events">Events</a>
+              <a href="fightcard.html" data-i18n="nav.fightcard">Fight Card</a>
+            </div>
+            <div class="foot-col">
+              <h4 data-i18n="footer.info">Info</h4>
+              <a href="#" data-i18n="footer.rankings">Rankings</a>
+              <a href="#" data-i18n="footer.rules"
+                >Rules &amp; Weight Classes</a
+              >
+              <a href="#" data-i18n="footer.broadcast">Broadcast Partners</a>
+            </div>
+            <div class="foot-col">
+              <h4 data-i18n="footer.follow">Follow</h4>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <span data-i18n="footer.copyright"
+            >© 2026 Grappa Krush League (GKL). All rights reserved.</span
+          >
+          <span data-i18n="footer.disclaimer"
+            >Fictional league for demonstration purposes.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
